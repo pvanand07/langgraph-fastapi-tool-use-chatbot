@@ -30,7 +30,7 @@ def state_modifier(state) -> list[BaseMessage]:
     return trim_messages(
         state["messages"],
         token_counter=len,
-        max_tokens=5,
+        max_tokens=16000,
         strategy="last",
         start_on="human",
         include_system=True,
